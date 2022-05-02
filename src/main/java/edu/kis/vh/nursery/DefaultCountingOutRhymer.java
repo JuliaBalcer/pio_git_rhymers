@@ -6,6 +6,8 @@ public class DefaultCountingOutRhymer {
 
 	private static final int _ARRAY_SIZE = 12;
 
+    private static final int _MAX_ARRAY_INDEX = 11;
+
 	private int[] numbers = new int[_ARRAY_SIZE];
 
     public int total = _TOTAL;
@@ -20,7 +22,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == 11;
+        return total == _MAX_ARRAY_INDEX;
     }
 
     protected int peekaboo() {
